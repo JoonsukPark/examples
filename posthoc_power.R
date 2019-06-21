@@ -2,6 +2,7 @@ n <- 30
 mu <- 0.5
 n_sim <- 10000
 
+# Note: "observed power" = "post hoc power"
 # True power is about 0.75
 
 power.t.test(n=n, delta=mu, sd=1, type='one.sample', alt='two.sided')$power
